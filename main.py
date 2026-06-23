@@ -6,7 +6,7 @@ import pillow_avif
 from routes.convert import router
 
 
-app = FastAPI()
+app = FastAPI() 
 
 pillow_heif.register_heif_opener()
 
