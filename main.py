@@ -11,3 +11,6 @@ app = FastAPI()
 pillow_heif.register_heif_opener()
 
 app.include_router(router)
+@app.get("/")
+def root():
+    return {"status": "convert API running"}
